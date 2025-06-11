@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Projekt X – Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>PROJEKT X – SYSTEM-DASHBOARD</h1>
+    <div id="level-display">Level: <span id="level">0</span></div>
+    <div id="xp-total">Gesamt-XP: <span id="xp">0</span></div>
+  </header>
+
+  <section id="subsystems">
+    <h2>Subsystem XP-Zuordnung</h2>
+    <table>
+      <thead><tr><th>Subsystem</th><th>XP</th><th>Status</th></tr></thead>
+      <tbody id="subsystem-table"></tbody>
+    </table>
+  </section>
+
+  <section id="log-entry">
+    <h2>XP hinzufügen</h2>
+    <form id="xp-form">
+      <input type="text" id="task-name" placeholder="Task" required>
+      <input type="number" id="xp-value" placeholder="XP" required>
+      <select id="subsystem">
+        <option value="Mental">Mentale Exzellenz</option>
+        <option value="Social">Soziale Kontrolle</option>
+        <option value="Physical">Körpertransformation</option>
+        <option value="AURUM">Projekt AURUM</option>
+        <option value="Emotion">Emotionale Kontrolle</option>
+        <option value="Meta">Meta-System</option>
+        <option value="Legacy">Legacy</option>
+      </select>
+      <button type="submit">Eintragen</button>
+    </form>
+  </section>
+
+  <script src="xpEngine.js"></script>
+  <script src="notionSync.js"></script>
+</body>
+</html>

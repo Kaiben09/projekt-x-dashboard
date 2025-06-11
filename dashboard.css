@@ -1,0 +1,25 @@
+body {
+  background-color: #101010;
+  color: #e0e0e0;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+header, section {
+  margin-bottom: 2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #555;
+}
+input, select, button {
+  margin: 0.5rem;
+  padding: 0.4rem;
+  background: #222;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #00ffae;
+}
